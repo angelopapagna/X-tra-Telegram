@@ -24,6 +24,8 @@ class Var(object):
     G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET", None)
     GDRIVE_FOLDER_ID = os.environ.get("GDRIVE_FOLDER_ID", "root")
     AUTH_TOKEN_DATA = os.environ.get("AUTH_TOKEN_DATA", None)
+    # Send .get_id in any channel to fill this value.
+    PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
     MAX_FLOOD_IN_P_M_s = int(os.environ.get("MAX_FLOOD_IN_P_M_s", 3))
     if AUTH_TOKEN_DATA != None:
         if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
