@@ -27,8 +27,8 @@ else:
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
             "TG_BOT_TOKEN",
-            api_id=Var.APP_ID,
-            api_hash=Var.API_HASH
+            api_id=Var."947383"
+            api_hash=Var."42de20ef0ee596d77eafa43c01671f90"
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
         print("Starting Userbot")
